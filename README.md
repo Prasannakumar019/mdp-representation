@@ -1,37 +1,72 @@
 # MDP REPRESENTATION
+# AIM:
+To represent any one real-world problem in MDP form.
 
-## AIM:
-Write your aim here
+# Problem Description:
+Consider an AI agent optimizing elevator operation in a high-rise building to efficiently transport passengers between floors.
 
-## PROBLEM STATEMENT:
+# State Space:
+state_space = {
 
-### Problem Description
-Write your answer here
+    "Elevator1": 0,  
+    
+    "Elevator2": 1,
+    
+    "Elevator3": 2,  
+    
+    "PassengerWaiting": 3  
 
-### State Space
-Write your answer here
+}
+# Sample State:
+sample_state = "Elevator1 -> 5"
 
-### Sample State
-Write your answer here
+# Action Space:
+action_space = {
+    "MoveUp": 0,  
 
-### Action Space
-Write your answer here
+    "MoveDown": 1,
+  
+    "OpenDoors": 2,
+  
+    "CloseDoors": 3  
 
-### Sample Action
-Write your answer here
+}
 
-### Reward Function
-Write your answer here
+# Sample Action:
+sample_action = "MoveUp -> 0"  
 
-### Graphical Representation
-Write your answer here
+# Reward Function:
+reward_function = {
+    "PassengerServed": +1,  
 
-## PYTHON REPRESENTATION:
-Write your code here
+    "EfficientOperation": +0.5,  
 
-## OUTPUT:
-Write your Python output here
+    "EmptyTrips": -0.5  
 
-## RESULT:
-Write your output here
+}
 
+# Graphical Representation:
+![WhatsApp Image 2023-09-08 at 21 20 56](https://github.com/Prasannakumar019/mdp-representation/assets/75235090/674d8321-2b44-44f2-924e-df4ae4d95fd1)
+
+
+# Python Dictionary Representation:
+```
+P = {
+    0: {
+        0: [(0.9, 0, 1, False), (0.1, 1, 0, False)],
+        1: [(0.1, 0, 1, False), (0.9, 1, 0, False)],
+        2: [(0.0, 0, 0, True)],
+        3: [(0.0, 0, 0, True)]
+    },
+    1: {
+        0: [(0.1, 0, 1, False), (0.9, 2, 0, False)],
+        1: [(0.9, 0, 1, False), (0.1, 2, 0, False)],
+        2: [(0.0, 1, 0, True)],
+        3: [(0.0, 1, 0, True)]
+    },
+```
+# Output:
+<img width="604" alt="pic" src="https://github.com/Prasannakumar019/mdp-representation/assets/75235090/edd04726-c826-461b-9a9e-1557a358dabd">
+
+# Result:
+Thus the given real world problem is successfully represented in a MDP form .
