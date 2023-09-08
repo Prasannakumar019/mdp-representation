@@ -64,9 +64,22 @@ P = {
         2: [(0.0, 1, 0, True)],
         3: [(0.0, 1, 0, True)]
     },
+    2: {
+        0: [(0.1, 1, 1, False), (0.9, 2, 0, False)],
+        1: [(0.9, 1, 1, False), (0.1, 2, 0, False)],
+        2: [(0.0, 2, 0, True)],
+        3: [(0.0, 2, 0, True)]
+    },
+    3: {
+        0: [(1.0, 3, 0, True)],
+        1: [(1.0, 3, 0, True)],
+        2: [(1.0, 3, 0, True)],
+        3: [(1.0, 3, 0, True)]
+    }
+}
 ```
 # Output:
-<img width="604" alt="pic" src="https://github.com/Prasannakumar019/mdp-representation/assets/75235090/edd04726-c826-461b-9a9e-1557a358dabd">
+![image](https://github.com/Prasannakumar019/mdp-representation/assets/75235090/628f108a-9a6b-4309-b248-972a2694c7ff)
 
 # Result:
 Thus the given real world problem is successfully represented in a MDP form .
